@@ -21,17 +21,44 @@ h1 {
 }
 
 .btn {
-    cursor: pointer;
-    background-color: darksalmon;
-    border: 0;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    padding: 8px;
+  cursor: pointer;
+  background-color: darksalmon;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
 }
 
 .btn:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
+.btn:focus,
+select:focus {
+  outline: 0;
+}
+
+.btn-toggle {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.text-box {
+  width: 70%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -800px);
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+}
+
+.text-box.show {
+  transform: translate(-50%, 0);
+}
 
