@@ -92,3 +92,8 @@ select:focus {
   text-align: right;
   cursor: pointer;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 4, 1fr;
+}
