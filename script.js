@@ -118,3 +118,13 @@ function speakText(e) {
 function setVoice(e) {
   message.voice = voices.find((voice) => voice.name === e.target.value);
 }
+
+//Voices changed
+
+speechSynthesis.addEventListener("voiceschanged", getVoices);
+
+//Toggle text box
+
+toggleBtn.addEventListener("click", () => {
+  document.getElementById("text-box").classList.toggle("show");
+});
