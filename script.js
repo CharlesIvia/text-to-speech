@@ -143,6 +143,7 @@ voicesSelect.addEventListener("change", setVoice);
 
 readBtn.addEventListener("click", () => {
   setTextMessage(textarea.value);
+  voicesSelect.addEventListener("change", setVoice);
   speakText();
 });
 
